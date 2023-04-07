@@ -5,7 +5,7 @@ rasa自定义组件
 使用rasa版本3.3
 
 
-## 稍做修改的jieba分词组件
+### 稍做修改的jieba分词组件
 
 在rasa shell nlu命令的输出中，可以显示词性标注的结果
 
