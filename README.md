@@ -22,3 +22,11 @@ rasa自定义组件
   - name: components.jieba_tokenizer.JiebaTokenizer   #对应的文件夹.文件名.类名
     dictionary_path: "pipline/jieba_userdict"
 ```
+
+### 数字提取组件
+
+不想使用DucklingEntityExtractor就用这个吧_(:з」∠)_
+
+```
+  - name: components.custom_number_extractor.CustomNumberExtractor
+```
