@@ -30,3 +30,17 @@ rasa自定义组件
 ```
   - name: components.custom_number_extractor.CustomNumberExtractor
 ```
+
+### 时间提取组件
+```
+  - name: components.custom_time_extractor.CustomTimeExtractor
+```
+支持格式：
+
+HH:mm
+
+hh:mm A/AM/PM
+
+hh:mm A/AM/PM (with optional seconds)
+
+ISO 8601 time format with an optional timezone (e.g., "12:34:56+08:00")
