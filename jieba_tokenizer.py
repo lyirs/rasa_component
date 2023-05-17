@@ -150,7 +150,9 @@ class JiebaTokenizer(Tokenizer):
         tokens = []
         current_position = 0
         for word, flag in tokenized:
-            word_start = current_position
+            if word.strip() == "":
+                continue
+            word_start = text.find(word, current_position)
             word_end = word_start + len(word)
             tokens.append(ExtendedToken(word, word_start, word_end, pos=flag))
             current_position = word_end
